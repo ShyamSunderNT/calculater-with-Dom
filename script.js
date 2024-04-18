@@ -28,7 +28,7 @@ var table = document.createElement("table");
 var buttons = [
     { label: 'C', id: 'clear', onclick: "clearScreen()" },
     { label: '←', id: 'backspace', onclick: "handleBackspace()"},
-    { label: '%', id: 'modulus', onclick: "appendOperator('%')"},
+    { label: '.', id: 'decimal', onclick: "appendDecimal()", key: '.' },
     { label: '/', id: 'divide', onclick: "appendOperator('/')", key: '/' },
     { label: '7', id: '7', onclick: "appendNumber('7')", key: '7' },
     { label: '8', id: '8', onclick: "appendNumber('8')", key: '8' },
@@ -42,7 +42,7 @@ var buttons = [
     { label: '2', id: '2', onclick: "appendNumber('2')", key: '2' },
     { label: '3', id: '3', onclick: "appendNumber('3')", key: '3' },
     { label: '+', id: 'add', onclick: "appendOperator('+')", key: '+' },
-    { label: '.', id: 'decimal', onclick: "appendDecimal()", key: '.' },
+    { label: '00', id: '00', onclick: "appendDecimal()", key: '00' },
     { label: '0', id: '0', onclick: "appendNumber('0')", key: '0' },
     { label: '=', id: 'equal', onclick: "calculate()", key: 'Enter' }
     

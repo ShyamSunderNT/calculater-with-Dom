@@ -42,7 +42,7 @@ var buttons = [
     { label: '2', id: '2', onclick: "appendNumber('2')", key: '2' },
     { label: '3', id: '3', onclick: "appendNumber('3')", key: '3' },
     { label: '+', id: 'add', onclick: "appendOperator('+')", key: '+' },
-    { label: '00', id: '00', onclick: "appendDecimal()", key: '00' },
+    { label: '00', id: '0', onclick: "appendNumber('00')", key: '0' },
     { label: '0', id: '0', onclick: "appendNumber('0')", key: '0' },
     { label: '=', id: 'equal', onclick: "calculate()", key: 'Enter' }
     
@@ -135,7 +135,8 @@ function handleButtonClick(value) {
         handleBackspace();
     } else if (value === '.') {
         appendDecimal();
-    } else {
+    } 
+    else {
         result.value += value;
     }
 }
